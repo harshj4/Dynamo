@@ -1,3 +1,4 @@
+# Dynamo: A replicated key-value storage
 <p>
 Dynamo is a distributed key-value storage database originally invented by Amazon. This is a implementation of Dynamo on a small scale with many of the core features. Dynamo provides serial linerizability and availability at the same time. Availability means that even under server failures, any particular key-value pair is always available for query(). Linearlizability ensures that even when servers succumb to non-byzantine failures, the value stored for a key on any server is always the most recent one. Dynamo provides these guarantees by incorporating replication of key-value pairs across multiple data centers.
 </p>
